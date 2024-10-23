@@ -1,6 +1,4 @@
-import './assets/main.css'
-
 import { createApp } from 'vue'
-import App from './App.vue'
+import NewTab from './components/NewTab.vue'
 
-createApp(App).mount('#app')
+createApp(NewTab).mount('#app')
