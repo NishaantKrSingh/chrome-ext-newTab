@@ -16,12 +16,12 @@
 <script setup>
 import { ref } from 'vue'
 // Reactive variable for input
-const inputText = ref('');
+const inputText = ref(0);
 const dobInput = ref('')
 
 // Save the input text to Chrome storage
 const saveText = () => {
-  chrome.storage.sync.set({ customText: inputText.value, mainDOB: dobInput.value }, () => {
+  chrome.storage.sync.set({ customNo: inputText.value, mainDOB: dobInput.value }, () => {
     console.log('Custom text saved:', inputText.value);
   });
 };
