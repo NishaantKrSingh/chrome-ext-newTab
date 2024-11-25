@@ -1,17 +1,28 @@
 <template>
   <div>
-    <h1>Welcome to My Custom New Tab Page</h1>
-    <p>
-      Years: {{ years }}, Months: {{ months }}, Days: {{ days }},
-      Weeks: {{ weeks }}, Hours: {{ hours }}, Minutes: {{ minutes }},
-      Seconds: {{ seconds }}, Milliseconds: {{ milliseconds }}
-    </p>
-    <p>{{ messagebox }}</p>
+    <div>
+      <h1>Time left:</h1>
+      <h1>
+        <p>
+          Years: {{ years }}, Months: {{ months }}, Days: {{ days }},
+          Weeks: {{ weeks }}, Hours: {{ hours }}, Minutes: {{ minutes }},
+          Seconds: {{ seconds }}, Milliseconds: {{ milliseconds }}
+        </p>
+      </h1>
+      <p>{{ messagebox }}</p>
+    </div>
+    <div>
+      <Shortcut link="https://google.com" name="Google" />
+      <Shortcut link="https://codestam.com" name="Codestam"/>
+      <Shortcut link="https://youtube.com" name="YouTube"/>
+      <Shortcut link="https://gradus.dev" name="Gradus"/>
+    </div>
   </div>
 </template>
 
 <script setup>
 import { ref, onMounted } from 'vue';
+import Shortcut from './comp/Shortcut.vue';
 
 // Store for user input
 const noYears = ref(0);
