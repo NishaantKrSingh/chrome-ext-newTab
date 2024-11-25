@@ -4,9 +4,7 @@
       <h1>Time left:</h1>
       <h1>
         <p>
-          Years: {{ years }}, Months: {{ months }}, Days: {{ days }},
-          Weeks: {{ weeks }}, Hours: {{ hours }}, Minutes: {{ minutes }},
-          Seconds: {{ seconds }}, Milliseconds: {{ milliseconds }}
+          {{ years }} : {{ months }} : {{ days }} : {{ hours }} : {{ minutes }} : {{ seconds }} : {{ milliseconds }}
         </p>
       </h1>
       <p>{{ messagebox }}</p>
@@ -17,12 +15,19 @@
       <Shortcut link="https://youtube.com" name="YouTube"/>
       <Shortcut link="https://gradus.dev" name="Gradus"/>
     </div>
+    <div>
+      <Profile usr-no="0"/>
+      <Profile usr-no="1"/>
+    </div>
+    <img src="http://ghchart.rshah.org/NishaantKrSingh" alt="Nishant's Github chart" />
   </div>
 </template>
 
 <script setup>
 import { ref, onMounted } from 'vue';
 import Shortcut from './comp/Shortcut.vue';
+import Profile from './comp/Profile.vue';
+
 
 // Store for user input
 const noYears = ref(0);
@@ -31,7 +36,6 @@ const dob = ref('');
 // Displaying countdown values
 const years = ref('00');
 const months = ref('00');
-const weeks = ref('00');
 const days = ref('00');
 const hours = ref('00');
 const minutes = ref('00');
@@ -108,5 +112,5 @@ onMounted(() => {
 });
 
 // Update every 100ms
-setInterval(updateDate, 100);
+setInterval(updateDate, 83);
 </script>
