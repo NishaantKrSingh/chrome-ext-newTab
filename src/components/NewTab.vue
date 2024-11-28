@@ -20,7 +20,7 @@
             <Profile usr-no="0" />
             <Profile usr-no="1" />
         </div>
-        <img src="http://ghchart.rshah.org/409ba5/NishaantKrSingh" alt="Nishant's Github chart" />
+        <img src="http://ghchart.rshah.org/0E1033/NishaantKrSingh" alt="Nishant's Github chart" />
     </div>
 </template>
 
